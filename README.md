@@ -4,6 +4,8 @@
 </p>
 
 # Project Structure
+
+```
 .
 ├── api_predict.py
 ├── app.py
@@ -30,7 +32,7 @@
     ├── index.html
     ├── js.html
     └── master.html
-
+```
 # Getting Started
 
 ## Install all requirements

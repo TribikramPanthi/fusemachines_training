@@ -61,11 +61,11 @@ Store the `model`and `encoder` in artifacts directory.
 ## Prepare the data for Evaluation
 
 Prepare your dataset to proceed with the model. Your data folder structure should be on following format:
-
+```
 | ├── data <- Root data folder
 │ │ ├── 0 <- Sub data folder with it's associated label
 | │ │ ├── img1.jpeg <- Image file with same filename as on csv file
-
+```
 To structure data this way, while running `evaluate.py` make sure to change `process_data` param to `True`
 
 ## Evaluate data

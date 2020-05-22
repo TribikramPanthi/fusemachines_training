@@ -2,7 +2,7 @@
 
 import flask
 from flask import jsonify, render_template, request
-import api_predict
+import classifier
 
 app = flask.Flask(__name__, static_url_path="/static/")
 app.config["DEBUG"] = False
@@ -17,7 +17,7 @@ def home():
 def predict():
 
     payload = request.get_json()
-    prediction, pos, neg = api_predict.predict(data=payload["data"])
+    prediction, pos, neg = classifier.predict(data=payload["data"])
     return jsonify({"result": str(prediction[0]), "post": pos, "neg": neg})
 
 

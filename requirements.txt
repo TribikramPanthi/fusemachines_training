@@ -2,4 +2,5 @@ tensorflow
 sklearn
 lime
 flask
-
+pillow
+opencv-python
